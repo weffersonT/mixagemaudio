@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+ <head>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+	<style>
+	    #arredondamento{
+			    	position:relative;
+			    	top:240px;
+					width:600px;
+					height:470px;
+					background:#031321;
+					border:3px solid #fff;/*bordas sólidas*/
+				  	border-radius:10px 35px; /*bordas arredondadas*/
+					padding:35px;
+					margin: 0 auto;
+					float: right;
+					right: 90px;
+					}
+	        
+					#arredondamento #todoform #campo1{
+					width:550px;
+					border:1px solid #fff;/*borda fina do cadastro*/
+					border-radius:3px 6px;
+					}
+
+					legend{  /*cor do titulo "cadastro"*/ 
+					 font-family: "times new roman",georgia,serif;
+					 font-size: 2em;
+					 color: #fff;
+					 font-weight:bold;
+
+					}
+					
+					#todoform input{
+				   	background: #fff;/*fundo do texto*/ 
+					border: 1px dashed #00000; /*boradas pontilhadas cor e tamanho*/ 
+					font: 25px bold arial,verdana, sans-serif
+
+					}
+					
+					#todoform td{
+					padding:10px;
+
+					}
+					
+					#todoform label{
+				    font: 23px bold arial,verdana,sans-serife;
+				    color: #fff;
+
+					}
+
+					.botao{
+		        	font-weight: bold;
+		        	padding: 1px;
+		        	float: left;
+		        	border-top-width: 2px;
+		        	border-right-width: 2px;
+		        	border-bottom-width: 2px;
+		        	border-left-width: 2px;
+		        	border-bottom-style: solid;
+		        	border-top-color: #c2c2a3;
+		        	border-right-color: #c2c2a3;
+		        	border-bottom-color: #c2c2a3;
+		        	border-left-color: #c2c2a3;
+		        	color: #000;/*cor da letra do botão*/
+		        	margin-left: 20px;
+		        }
+		        .botao:hover{
+		        	color:#001a33;
+		        	background-color:#330000;
+		        	border-radius: 10px 0px 10px 0px;
+		            }
+				.botao1{
+		        	font-weight: bold;
+		        	padding: 1px;
+		        	float: left;
+		        	border-top-width: 2px;
+		        	border-right-width: 2px;
+		        	border-bottom-width: 2px;
+		        	border-left-width: 2px;
+		        	border-bottom-style: solid;
+					border-top-color: #c2c2a3;
+		        	border-right-color: #c2c2a3;
+		        	border-bottom-color: #c2c2a3;
+		        	border-left-color: #c2c2a3;
+		        	color: #000;
+		        	margin-left: 20px;
+		        }
+		        .botao1:hover{
+		        	color: #001a33;/*cor da letra com mouse em cima*/
+		        	background-color:#330000;
+		        	border-radius: 10px 0px 10px 0px;
+		            }
+						
+	</style>
+ </head>
+ 
+ <body>  
+ 	<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+
+				<li><a href="#">Estúdios</a>
+					<ul>
+						<li><a href="estudio_a.html">Estúdio A</a></li>
+						<li><a href="estudio_b.html">Estúdio B</a>
+						<li><a href="estudio_vip.html">Estúdio Vip</a>
+						<li><a href="estudio_masterizacao.html">Masterização</a>
+					</ul>
+
+				<li><a href="#">Serviços</a>
+					<ul>
+						<li><a href="producao_musical.html">Produção</a></li>
+						<li><a href="Mixagem.html">Mixagem</a>
+						<li><a href="#">Masterização</a>
+					</ul>
+
+				<li><a href="missao_visao_valores.html">Sobre nós</a>
+					<ul>
+						<li><a href="sitetema.html">Termos</a> </li>
+					</ul>
+					
+				<li><a href="#">Produções</a>
+					<ul>
+						
+					</ul>
+
+				<li><a href="#">História</a>
+					<ul>
+								
+					</ul>
+
+				<li><a href="Cadastro.html">Contato</a></li>
+
+				<li><a href="https://goo.gl/maps/9ZDA97sTP5kogxh68" target="blank">Localização</a></li>
+			</ul>
+			<br>
+      
+		</nav>
+
+
+		  <div id="arredondamento">
+			     <form name="form1" id="todoform" action="#" mathod="podt" autocompemente="off">
+					   <fieldset id="campo1">
+						   <legend>Cadastro:</legend>
+						    <table>
+								   <tr>
+									    <td><label>Email:</label></td>
+											<td><input type="text" name="Email" size="20" maxlength="33" placeholder="digite aqui seu e-mail"></td>
+									 </tr>
+									    
+									 <tr>
+									   <td><label>Telefone:</label></td>
+				             <td><input type="text" name="Telefone" size"15" maxlength="30" placeholder="digite aqui seu telefone"></td>
+									 </tr>
+									 
+									 <tr>
+                      <td><label>Nome:</label>
+                    	<td><input type="text" name="Nome" size"20" maxlength="30" placeholder="digite aqui seu nome">   
+						       </tr>
+									 
+									 <tr>
+                      <td><label>Sobrenome:</label>
+                    	<td><input type="text" name="sobrenome" size"20" maxlength="30" placeholder="digite aqui seu sobrenome">   
+						       </tr>
+									 
+										<tr>
+										  <td><label>Deseja entrar em contato via:</label></br></td>
+                  		<td><label><input type="checkbox" name"Whatsapp"checked>E-mail</label></br>
+                  	  <label><input type="checkbox" name"E-mail" checked>Telefone</label></br>
+                  		<label><input type="checkbox" name"SMS" checked>SMS</td></label>
+										 </tr>
+										 
+									 <tr>
+						          <td colspan="2">
+											    <input class="botao" type="submit" value="Enviar">&nbsp;
+											    <input class="botao1" type="reset" value="limpar">
+
+											</td>
+									 </tr>
+									</table>
+						 </fieldset>
+					 </form>
+		 </div>	
+ </body>
+</html>
